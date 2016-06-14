@@ -6,6 +6,8 @@ function ready() {
 	$('#new_task').on('ajax:success', newTask);
 
 	function newTask(event, data) {
+		console.log(arguments);
+		console.log("this string is here");
 	   $('#tasks').append(data);
 	   $('#task_name').val('');
 	}
